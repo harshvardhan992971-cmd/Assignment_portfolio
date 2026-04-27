@@ -1,0 +1,193 @@
+/* General Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; /* Elegant, readable font */
+    background-color: #f5f5f5; /* Light background for a clean feel */
+    color: #333; /* Text color */
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: #2c3e50; /* Dark blue/navy background */
+    color: #ecdbba; /* Soft gold/cream color for text */
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: #ecdbba; /* Gold text */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    padding: 60px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background */
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+#about h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #2c3e50; /* Dark navy blue */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+/* Profile Picture Styling */
+.profile-picture {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes it a circle */
+    border: 4px solid #2c3e50; /* Border color (same as header color) */
+    object-fit: cover;
+}
+
+.about-introduction, .my-journey, .skills, .my-projects, .career-goals, .hobbies {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #ecdbba; /* Soft gold for the background */
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-introduction p,
+.my-journey p,
+.skills p,
+.career-goals p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Skill Badges */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.skills ul li {
+    font-size: 1.2rem;
+    background: #2c3e50; /* Dark background for skill badges */
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.skills ul li:hover {
+    background-color: #34495e; /* Slightly lighter shade for hover */
+    cursor: pointer;
+}
+
+/* Projects and Hobbies Section */
+.my-projects ul, .hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.my-projects ul li, .hobbies ul li {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.my-projects ul li strong,
+.hobbies ul li strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.my-projects ul li a,
+.hobbies ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.my-projects ul li a:hover,
+.hobbies ul li a:hover {
+    text-decoration: underline;
+    color: #ecdbba; /* Gold accent on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 20px;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+    }
+
+    .skills ul li {
+        width: 45%;
+    }
+
+    .about-introduction p,
+    .my-journey p,
+    .skills p {
+        font-size: 1.1rem;
+    }
+
+    .my-projects ul li, .hobbies ul li {
+        font-size: 1.1rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark blue footer */
+    color: #ecdbba; /* Soft gold text */
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
